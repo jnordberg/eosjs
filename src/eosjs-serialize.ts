@@ -1111,3 +1111,5 @@ export function deserializeAction(contract: Contract, account: string, name: str
         data: deserializeActionData(contract, account, name, data, textEncoder, textDecoder),
     };
 }
+
+export { numeric };
