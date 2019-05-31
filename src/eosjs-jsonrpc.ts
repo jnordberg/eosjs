@@ -54,6 +54,7 @@ export class JsonRpc implements AuthorityProvider, AbiProvider {
             }
         } catch (e) {
             e.isFetchError = true;
+            e.response = response;
             throw e;
         }
         if (!response.ok) {
